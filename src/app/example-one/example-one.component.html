@@ -1,0 +1,11 @@
+<div class="parent">
+    <p>
+        <button (click)="remove()">remove</button>
+    </p>
+    <div @moveDiv class="container" 
+        (@moveDiv.start)="strartA($event)"  
+        (@moveDiv.done)="endA($event)" *ngFor="let item of divs; let i = index">
+       {{i}}
+    </div>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="buttons-container">
+    <button (click)="crewOn()">crew on</button>
+    <button (click)="crewOff()">crew off</button>
+    <button (click)="scaleOn()">scale on</button>
+    <button (click)="scaleOff()">scale off</button>
+    <button (click)="rotatedOn()">rotated on</button>
+    <button (click)="rotatedOff()">rotated off</button>
+    <button (click)="translatedOn()">translated on</button>
+    <button (click)="translatedOff()">translated off</button>
+</div>
+<div [@transform2D]="state" class="item">
+
+</div>
