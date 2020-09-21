@@ -23,7 +23,7 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
       ]),
       transition('* => void', [
         // style({ opacity: 1, transform: 'translateX(-50%) translateY(-50%) scale(1)' }),
-        animate('.3s', style({ backgroundColor: 'green', opacity: 0, transform: 'scale(.6)' }))
+        animate('0.3s', style({ backgroundColor: 'green', opacity: 0, transform: 'scale(.6)' }))
       ])
     ])
   ]
