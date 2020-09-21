@@ -15,12 +15,12 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     // console.log('>>>>>>>>>>>>>>>>>>>>>>>>');
     // console.log(this.preloader);
-    // const el = this._r2.selectRootElement('.preloader');
-    // setTimeout(() => {
-      // if (el) {
-      //   el.remove();
-      // }
-    // }, 1500);
+    const el = this._r2.selectRootElement('.preloader');
+    setTimeout(() => {
+      if (el) {
+        el.remove();
+      }
+    }, 3000);
     // console.log(el);
   }
 }
