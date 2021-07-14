@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ExampleOneComponent } from './example-one/example-one.component';
 import { ExampleHoverOneComponent } from './example-hover-one/example-hover-one.component';
 import { TwoDtransformComponent } from './two-dtransform/two-dtransform.component';
+import { SvgAnimationComponent } from './svg-animation/svg-animation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleOneComponent,
     ExampleHoverOneComponent,
-    TwoDtransformComponent
+    TwoDtransformComponent,
+    SvgAnimationComponent
   ],
   imports: [
     BrowserModule,
