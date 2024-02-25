@@ -10,15 +10,15 @@ import { filter } from 'rxjs/operators';
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations:[
     trigger('animButton', [
-      state('translated', style({ transform: 'translate(300px, -10px)', opacity: 0})),
-      state('rotated', style({ transform: 'rotateX(360deg) rotateY(360deg)' })),
+      state('translated', style({ transform: 'translateY(-300px)', opacity: 0, visibility: 'visible' })),
+      // state('rotated', style({ transform: 'rotateX(360deg) rotateY(360deg)' })),
 
-      transition('translated => *', [animate('0s ease-in')]),
-      transition('* => translated', [animate('0.7s ease-in')]),
+      transition('translated => *', [animate('0s ease-out')]),
+      transition('* => translated', [animate('0.8s ease-in')]),
       
 
-      transition('* => rotated', [animate('3s ease-in')]),
-      transition('rotated => *', [animate('0.5s ease-in')]),
+      // transition('* => rotated', [animate('3s ease-in')]),
+      // transition('rotated => *', [animate('0.5s ease-in')]),
     ])
   ]
 })

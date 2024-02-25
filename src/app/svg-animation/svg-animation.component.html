@@ -1,4 +1,7 @@
-<div class="container" [@animButton]="state">
-    <img src="../../assets/images/download-arrow.svg" />
+
+<div class="container" >
+    <button class="container__button" (click)="startAnim()">start</button>
 </div>
-<button class="container__button" (click)="startAnim()">start</button>
+<div class="aaa">
+    <img [@animButton]="state" class="anim-svg"  src="../../assets/images/arrow.svg" />
+</div>

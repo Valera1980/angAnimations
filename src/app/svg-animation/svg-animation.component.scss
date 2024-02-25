@@ -1,9 +1,33 @@
 .container {
-    width: 50px;
+    width: auto;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
     &__button {
         &:hover {
             cursor: pointer;
         }
     }
+    
+}
+.anim-svg{
+        //  opacity: 0;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        // position: absolute;
+        // top: 500px;
+        // left: 900px;
+        visibility: hidden;
+
+}
+.aaa{
+      position: absolute;
+        top: 300px;
+        left: 900px;
+        width: 50px;
+        height: 50px;
+        
+
 }
