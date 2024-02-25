@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "animationAngularFun:build"
+            "buildTarget": "animationAngularFun:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "animationAngularFun:build:production"
+              "buildTarget": "animationAngularFun:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "animationAngularFun:build"
+            "buildTarget": "animationAngularFun:build"
           }
         },
         "test": {
