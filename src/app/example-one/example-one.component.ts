@@ -1,5 +1,12 @@
-import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
-import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
+import {
+  animate,
+  keyframes,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-example-one',
@@ -15,23 +22,33 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
       // transition('start => end', [animate('3s')])
       // transition('void => *', [style({ opacity: 0, transform: 'translateY(25%)' }), animate('1s ease-in-out')]),
       transition('void => *', [
-        animate(2000, keyframes([
-          style({ opacity: 0, transform: 'translateY(-30px)', offset: 0 }),
-          style({ opacity: 0.3, transform: 'translateY(30px)', offset: 0.3 }),
-          style({ opacity: 0.8, transform: 'translateY(0)', offset: 0.8 })
-        ]))
+        animate(
+          2000,
+          keyframes([
+            style({ opacity: 0, transform: 'translateY(-30px)', offset: 0 }),
+            style({ opacity: 0.3, transform: 'translateY(30px)', offset: 0.3 }),
+            style({ opacity: 0.8, transform: 'translateY(0)', offset: 0.8 }),
+          ])
+        ),
       ]),
       transition('* => void', [
         // style({ opacity: 1, transform: 'translateX(-50%) translateY(-50%) scale(1)' }),
-        animate('0.3s', style({ backgroundColor: 'green', opacity: 0, transform: 'scale(.6)' }))
-      ])
-    ])
-  ]
+        animate(
+          '0.3s',
+          style({
+            backgroundColor: 'green',
+            opacity: 0,
+            transform: 'scale(.6)',
+          })
+        ),
+      ]),
+    ]),
+  ],
 })
 export class ExampleOneComponent implements OnInit {
   state = 'some';
   divs = [1, 2, 3, 4, 5, 6];
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -59,5 +76,4 @@ export class ExampleOneComponent implements OnInit {
     // console.log('============ end ==============');
     // console.log(p);
   }
-
 }
